@@ -5,8 +5,6 @@ namespace SortingAlgorithms
 {
     public static class OutputDataHandler
     {
-        
-
         public static void Farewell()
         {
             Console.WriteLine(FarewellMessage);
@@ -35,7 +33,5 @@ namespace SortingAlgorithms
             }
             Console.WriteLine(Environment.NewLine);
         }
-
-        
     }
 }

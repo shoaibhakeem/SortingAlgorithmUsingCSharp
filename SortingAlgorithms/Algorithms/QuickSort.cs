@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace SortingAlgorithms.Algorithms
+﻿namespace SortingAlgorithms.Algorithms
 {
     public class QuickSort : ISort
     {
         public void SortArray(int[] numbers)
         {
-            PerformSort(numbers, 0, numbers.Length - 1); 
+            PerformSort(numbers, 0, numbers.Length - 1);
         }
 
         private void PerformSort(int[] numbers, int left, int right)
@@ -25,7 +23,6 @@ namespace SortingAlgorithms.Algorithms
         private int Partition(int[] numbers, int left, int right)
 
         {
-
             int pivot = numbers[left];
             while (true)
             {
