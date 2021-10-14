@@ -14,7 +14,9 @@
         {
             SelectionSort = 1,
             BubbleSort,
-            InsertionSort
+            InsertionSort,
+            MergeSort,
+            QuickSort
         }
     }
 }
