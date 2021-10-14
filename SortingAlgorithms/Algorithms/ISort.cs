@@ -2,6 +2,6 @@
 {
     public interface ISort
     {
-        void GetSortedArray(int[] numbers);
+        void SortArray(int[] numbers);
     }
 }

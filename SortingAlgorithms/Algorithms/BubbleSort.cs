@@ -2,7 +2,7 @@
 {
     public class BubbleSort : ISort
     {
-        public void GetSortedArray(int[] numbers)
+        public void SortArray(int[] numbers)
         {
             int i, j, temp;
             int count = numbers.Length;

@@ -2,7 +2,7 @@
 {
     public class InsertionSort : ISort
     {
-        public void GetSortedArray(int[] numbers)
+        public void SortArray(int[] numbers)
         {
             int n = numbers.Length;
             for (int i = 1; i < n; ++i)

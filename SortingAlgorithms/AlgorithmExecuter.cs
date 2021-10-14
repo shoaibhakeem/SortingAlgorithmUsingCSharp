@@ -20,18 +20,18 @@ namespace SortingAlgorithms
 
         private static (long elapsedTicks, long elapsedTimeInMilliseconds) MonitorAlgorithm(int[] numbers, SortingAlgorithm algorithm)
         {
+            var sortingAlgorithm = AlgorithmFactory
+                            .Instance
+                            .GetSortingAlgorithm(algorithm);
+
+            if (sortingAlgorithm == null)
+                return (-1, -1);
+
             Stopwatch stopwatch = Stopwatch.StartNew();
-            ExecuteAlgorithm(numbers, algorithm);
+            sortingAlgorithm.SortArray(numbers);
             stopwatch.Stop();
             return (stopwatch.ElapsedTicks, stopwatch.ElapsedMilliseconds);
         }
 
-        private static void ExecuteAlgorithm(int[] numbers, SortingAlgorithm algorithm)
-        {
-            AlgorithmFactory
-                .Instance
-                .GetSortingAlgorithm(algorithm)
-                ?.GetSortedArray(numbers);
-        }
     }
 }

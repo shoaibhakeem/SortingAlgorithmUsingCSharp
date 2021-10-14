@@ -2,7 +2,7 @@
 {
     public class SelectionSort : ISort
     {
-        public void GetSortedArray(int[] numbers)
+        public void SortArray(int[] numbers)
         {
             int count = numbers.Length;
 
