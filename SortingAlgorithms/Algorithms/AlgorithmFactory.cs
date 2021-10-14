@@ -17,7 +17,8 @@ namespace SortingAlgorithms.Algorithms
             _rules = new List<ISortRule>()
             {
                 new SelectionSortRule(),
-                new BubbleSortRule()
+                new BubbleSortRule(),
+                new InsertionSortRule()
             };
         }
 

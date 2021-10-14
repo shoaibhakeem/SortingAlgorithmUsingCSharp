@@ -13,7 +13,8 @@
         public enum SortingAlgorithm
         {
             SelectionSort = 1,
-            BubbleSort
+            BubbleSort,
+            InsertionSort
         }
     }
 }
