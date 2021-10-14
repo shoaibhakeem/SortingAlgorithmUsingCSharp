@@ -18,7 +18,9 @@ namespace SortingAlgorithms.Algorithms
             {
                 new SelectionSortRule(),
                 new BubbleSortRule(),
-                new InsertionSortRule()
+                new InsertionSortRule(),
+                new MergeSortRule(),
+                new QuickSortRule()
             };
         }
 

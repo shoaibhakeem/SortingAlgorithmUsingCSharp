@@ -5,20 +5,18 @@ namespace SortingAlgorithms
 {
     public static class OutputDataHandler
     {
-        public static void PrintList(int[] numbers)
-        {
-            Console.WriteLine(SortedMessageText);
-            foreach (var number in numbers)
-            {
-                Console.Write($" {number} ");
-            }
-            Console.WriteLine(Environment.NewLine);
-        }
+        
 
         public static void Farewell()
         {
             Console.WriteLine(FarewellMessage);
             Console.ReadKey();
+        }
+
+        public static void PrintResults(long elapsedTicks, long elapsedTimeInMilliseconds, SortingAlgorithm algorithm, int[] numbers)
+        {
+            PrintPerformanceStatistics(elapsedTicks, elapsedTimeInMilliseconds, algorithm);
+            PrintList(numbers);
         }
 
         private static void PrintPerformanceStatistics(long elapsedTicks, long elapsedTimeInMilliseconds, SortingAlgorithm algorithm)
@@ -28,10 +26,16 @@ namespace SortingAlgorithms
                     Elapsed Time In Milliseconds : {elapsedTimeInMilliseconds} {Environment.NewLine}");
         }
 
-        public static void PrintResults(long elapsedTicks, long elapsedTimeInMilliseconds, SortingAlgorithm algorithm, int[] numbers)
+        private static void PrintList(int[] numbers)
         {
-            PrintPerformanceStatistics(elapsedTicks, elapsedTimeInMilliseconds, algorithm);
-            PrintList(numbers);
+            Console.WriteLine(SortedMessageText);
+            foreach (var number in numbers)
+            {
+                Console.Write($" {number} ");
+            }
+            Console.WriteLine(Environment.NewLine);
         }
+
+        
     }
 }

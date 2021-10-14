@@ -32,6 +32,5 @@ namespace SortingAlgorithms
             stopwatch.Stop();
             return (stopwatch.ElapsedTicks, stopwatch.ElapsedMilliseconds);
         }
-
     }
 }
