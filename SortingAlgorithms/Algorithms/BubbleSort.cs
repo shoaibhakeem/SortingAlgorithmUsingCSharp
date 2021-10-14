@@ -1,4 +1,4 @@
-﻿namespace SortingAlgorithms.Algorithms.Rules
+﻿namespace SortingAlgorithms.Algorithms
 {
     public class BubbleSort : ISort
     {
